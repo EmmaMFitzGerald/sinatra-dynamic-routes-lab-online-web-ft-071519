@@ -11,4 +11,6 @@ class App < Sinatra::Base
     @number = params[:number]
     "#{params[:number].to_i * params[:number].to_i}"
   end
+  
+  
 end
