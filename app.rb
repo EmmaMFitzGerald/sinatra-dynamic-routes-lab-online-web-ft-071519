@@ -15,6 +15,10 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do 
     @number = params[:number].to_i
     @phrase = params[:phrase]
-      
+      counter = 0 
+      while counter < @number 
+        print @phrase
+        counter += 1 
+      end
   end 
 end
