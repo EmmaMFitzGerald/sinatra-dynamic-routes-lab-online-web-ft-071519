@@ -19,4 +19,6 @@ class App < Sinatra::Base
     @num.times { str += "#{@phrase}" }
     str
   end
+  
+  
 end
